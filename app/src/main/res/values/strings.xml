@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SquadX</string>
+    <string name="msg">Please enable all permission</string>
+</resources>

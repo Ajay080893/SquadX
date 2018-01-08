@@ -1,0 +1,502 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeMovieHits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout android:id="@+id/middle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                >
+
+
+
+
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:showDividers="middle"
+                                android:orientation="vertical"
+                                android:shrinkColumns="*"
+                                android:stretchColumns="*"
+                                android:background="@layout/textlayout"
+
+                                >
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+
+                                    >
+
+
+                                    <ImageView
+                                        android:id="@+id/btnbookingdate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="45dp"
+                                        android:layout_column="0"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_weight="2"
+                                        android:background="@drawable/bitcoin" />
+                                    <EditText
+                                        android:id="@+id/txtname"
+                                        android:layout_width="0dp"
+                                        android:layout_height="45dp"
+                                        android:layout_column="0"
+                                        android:layout_weight="5"
+                                        android:background="@layout/textlayout"
+                                        android:focusable="false"
+
+                                        android:text=""
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textCursorDrawable="@null" />
+
+
+                                    <TextView
+                                        android:id="@+id/txtrank"
+                                        android:layout_width="0dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/parentlayout"
+                                        android:layout_column="0"
+                                        android:layout_weight="3"
+                                        android:text="Rank"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="#ff4c404c" />
+
+                                    <EditText
+                                        android:id="@+id/edtrank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="45dp"
+                                        android:layout_below="@+id/parentlayout"
+                                        android:layout_column="1"
+                                        android:layout_weight="7"
+                                        android:background="@layout/textlayout"
+                                        android:focusable="false"
+
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:textColor="#ff4c404c"
+                                        android:textCursorDrawable="@null"
+
+                                        />
+
+
+
+                                </TableRow>
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="25dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+                                    >
+
+                                </TableRow>
+                            </TableLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tablelayoutgone"
+                                android:orientation="vertical"
+                                android:shrinkColumns="*"
+                                android:stretchColumns="*"
+                                android:background="@layout/textlayout"
+                                >
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/txtpriceusd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="4.5"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+
+                                            android:textStyle="bold"
+                                            android:gravity="center"
+                                            android:hint="Price USD"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <ImageButton
+                                        android:id="@+id/btndate1"
+                                        android:layout_width="0dp"
+                                        android:layout_column="1"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1.50"
+                                        android:background="@drawable/arrow"
+                                        android:layout_gravity="left"
+                                        android:focusable="false"/>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/txtpricebtc"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="4.5"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+
+                                            android:textStyle="bold"
+                                            android:hint="Price BTC"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                </TableRow>
+
+
+
+                            </TableLayout>
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tablelayoutgone1"
+                                android:orientation="vertical"
+                                android:shrinkColumns="*"
+                                android:stretchColumns="*"
+                                android:background="@layout/textlayout"
+                                >
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/txtvoulume"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+
+                                            android:textStyle="bold"
+                                            android:hint="Volume(24)"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#3e8b65">
+
+                                        <TextView
+                                            android:id="@+id/txtfldaweightpick"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:hint=""
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            android:textStyle="bold"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/txtmarketprice"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:hint="Market Cap"
+
+                                            android:textStyle="bold"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+
+                                </TableRow>
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="25dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+                                    >
+
+                                </TableRow>
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/txtavailsupply"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="4.5"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:hint="Available Supply"
+
+                                            android:textStyle="bold"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#3e8b65">
+
+                                        <EditText
+                                            android:id="@+id/edtpvtmarka"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+
+                                            android:textStyle="bold"
+                                            android:hint=""
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/totalsupply"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="4.5"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:hint="Total Supply"
+
+                                            android:textStyle="bold"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:layout_margin="2dp"
+
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/pctgoneh"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:hint="%(1h)"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            android:textStyle="bold"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/pctgsecnd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+
+                                            android:textStyle="bold"
+                                            android:hint="%(24h)"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="#4b98c1">
+
+                                        <EditText
+                                            android:id="@+id/pctgd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="35dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="2"
+                                            android:background="@layout/textcharge"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:gravity="center"
+
+                                            android:textStyle="bold"
+                                            android:hint="%(7d)"
+                                            android:singleLine="true"
+                                            android:textAppearance="?android:attr/textAppearanceSmall"
+                                            android:textCursorDrawable="@null"
+
+                                            />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+
+                                </TableRow>
+                            </TableLayout>
+
+
+
+
+
+
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
